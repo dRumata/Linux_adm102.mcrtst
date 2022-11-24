@@ -1,0 +1,589 @@
+    1  cat /etc/group|less
+    2  sudo vim hello.txt
+    3  ls -l
+    4  sudo dnf update
+    5  sudo reboot
+    6  tmux ls
+    7  sudo dnf install tmux
+    8  tmux ls
+    9  tmux
+   10  tmux ls
+   11  tmux attach-session -t 0
+   12  history 
+   13  tmux
+   14  tmux ls
+   15  tmux attach-session -t1
+   16  tmux attach-session -t0
+   17  history -a
+   18  htop
+   19  top
+   20  systemctl status sshd
+   21  sudo ss -tlnp|grep ssh
+   22  sudo netstat -tlnp|grep ssh
+   23  lsof 
+   24  lsof |grep ssh
+   25  sudo lsof |grep ssh
+   26  sudo lsof -p|grep ssh
+   27  sudo lsof p|grep ssh
+   28  sudo lsof -P|grep ssh
+   29  sudo ss -tlnp
+   30  sudo ss -tuanp
+   31  man lsof
+   32  history 
+   33  history -a
+   34  exit
+   35  exit
+   36  tmux
+   37  exit
+   38  tmux ls
+   39  tmux 
+   40  sudo dnf install zellij
+   41  cargo install --locked zellij
+   42  exit
+   43  mc
+   44  top
+   45  exit
+   46  ls /boot/
+   47  ls /boot/grub2/
+   48  sudo ls /boot/grub2/
+   49  sudo ls /boot/grub2/ -l
+   50  sudo vim /boot/grub2/grub.cfg
+   51  ls /etc/default/grub 
+   52  ls /etc/default/
+   53  ls /etc/default/ -l
+   54  vim /etc/grub2.cfg 
+   55  sudo vim /etc/grub2.cfg 
+   56  sudo ls -l /etc/grub.d/
+   57  sudo cat /etc/grub.d/README
+   58  man grub2-set-password 
+   59  ps -ef|less
+   60  sudo /etc/init.d/sshd status
+   61  man systemctl 
+   62  ls
+   63  ls -l
+   64  ls -lh
+   65  ls -lh /etc/
+   66  help
+   67  ls -lh /etc/
+   68  ls -lh /etc/|less
+   69  ls -lh /etc/|less|grep ноя
+   70  ls -lh /etc/|less|grep ноя|grep conf
+   71  ls -lh /etc/|less|grep ноя|grep conf >> result.file
+   72  ls -l
+   73  cat result.file 
+   74  mkdir dir1
+   75  ping ya.ru -c3
+   76  ping ya.ru -cf3
+   77  mkdir dir3/dir4
+   78  sudo su -
+   79  sudo ls
+   80  exit
+   81  tmux attach-session -t0
+   82  history
+   83  ip a
+   84  lsblk -f
+   85  0c8560ba8ee      3,9G     1% /home
+   86    ├─fedora_t2728tq--zamor40-var xfs                  VAR   e5640276-42db-4be4-96fc-2b67ae04519c      4,6G     6% /var
+   87    └─fedora_t2728tq--zamor40-tmp xfs                        0d670fdf-c39a-4dc0-bc74-f459f53829c1    92
+   88  lsblk -f
+   89  ip a
+   90  sudo swapon
+   91  sudo vgs
+   92  sudo dd if=/dev/null of=swapfile bs=1M count=500
+   93  man dd
+   94  dd if=/dev/sda of=backupmbr bs=512 count=2047
+   95  sudo dd if=/dev/sda of=backupmbr bs=512 count=2047
+   96  sudo mkswap swapfile 
+   97  ls -l
+   98  sudo dd if=/dev/null of=swapfile bs=1MB count=500
+   99  sudo dd if=/dev/null of=swapfile bs=1M count=500
+  100  ls -l
+  101  df -h
+  102  sudo dd if=/dev/null of=swapfile bs=512 count=1000
+  103  ls -l
+  104  sudo dd if=/dev/zero of=swapfile bs=1M count=500
+  105  ls -l
+  106  ls -lh
+  107  sudo mkswap swapfile 
+  108  sudo chmod 600 swapfile 
+  109  sudo swapon swapfile
+  110  sudo swapon
+  111  head /etc/passwd
+  112  sudo head /etc/shadow
+  113  sudo su -
+  114  journalctl -f
+  115  exit
+  116  tmux
+  117  sudo ls
+  118  sudo su -
+  119  history 
+  120  vim /usr/share/doc/iputils/README.bonding 
+  121  systemctl status NetworkManager.service 
+  122  systemctl status Netvorkmanager.service
+  123  echo $PATH
+  124  vim myscript.sh
+  125  chmod +x myscript.sh 
+  126  ./myscript.sh 
+  127  cat myscript.sh 
+  128  cd /usr
+  129  /home/sa/myscript.sh 
+  130  cd
+  131  ls
+  132  mkdir bin
+  133  mv myscript.sh bin/
+  134  ls -l
+  135  myscript.sh 
+  136  cd /etc/sshd/
+  137  cd /etc/ssh/
+  138  myscript.sh 
+  139    cd
+  140  cd
+  141  cat /etc/ssh/ssh_config
+  142  man cat
+  143  touch newfile
+  144  ls -l
+  145  vim newfile2
+  146  ls -l
+  147  man touch
+  148  sudo usermod -a -G cdrom sa
+  149  sudo vigr
+  150  sudo vim /etc/group
+  151  sudo vipw
+  152  systemctl status sshd
+  153  systemctl status cockpit.service 
+  154  sudu systemctl start cockpit.service
+  155  sudo systemctl start cockpit.service
+  156  sudo systemctl status cockpit.service
+  157  sudo ss -tlpn
+  158  ip a
+  159  sudo firewall-cmd --permanent --add-port=9090
+  160  sudo firewall-cmd --permanent --add-port=9090/tcp
+  161  sudo firewall-cmd --reload 
+  162  sudo systemctl stop cockpit.service 
+  163  sudo systemctl stop cockpit.socket 
+  164  sudo systemctl list-units
+  165  sudo systemctl list-units|grep cockpit
+  166  sudo systemctl list-unit-files 
+  167  sudo systemctl list-unit-files |grep cockpit
+  168  systemctl cat cockpit.service 
+  169  systemctl cat cockpit.socket 
+  170  systemctl cat sshd
+  171  sudo systemctl list-unit-files --type service 
+  172  sudo systemctl list-unit-files --type mount 
+  173  sudo systemctl list-unit-files --type timer
+  174  sudo systemctl list-unit-files --type target 
+  175  systemctl get-default 
+  176  systemctl list-dependencies graphical.target 
+  177  ps -ef|less
+  178  systemctl list-dependencies graphical.target 
+  179  ps -ef|less
+  180  nano newfile&
+  181  fg
+  182  vi newfile&
+  183  pstree
+  184  ps -ef
+  185  sudo systemctl edit sshd
+  186  sudo systemctl edit sshd --full
+  187  systemctl status sshd
+  188  sudo systemctl edit sshd --full
+  189  systemctl status sshd
+  190  sudo systemctl edit sshd
+  191  systemctl status sshd
+  192  systemctl daemon-reload 
+  193  SUDO systemctl daemon-reload 
+  194  sudo systemctl daemon-reload 
+  195  systemctl status sshd
+  196  sudo systemctl --force --full edit newservice.service
+  197  sudo systemctl list-units --type target
+  198  sudo systemctl list-unit-files --type target
+  199  sudo systemctl list-dependencies reboot.target 
+  200  systemctl status sshd
+  201  sudo dnf install httpd
+  202  systemctl status httpd.service 
+  203  sudo systemctl start httpd
+  204  systemctl status httpd.service 
+  205  sudo systemctl enable httpd
+  206  systemctl status httpd.service 
+  207  sudo firewall-cmd --permanent --add-port=80/tcp
+  208  sudo firewall-cmd --reload
+  209  sudo systemctl disable httpd
+  210  history 
+  211  ssh sa@192.168.225.222
+  212  echo export PS1="\[\033[38;5;40m\]\A\[$(tput sgr0)\] \[$(tput sgr0)\]\[\033[38;5;81m\]> \[$(tput sgr0)\]\[$(tput bold)\]\[\033[38;5;40m\]\u\[$(tput sgr0)\]\[\033[38;5;69m\]@\[$(tput sgr0)\]\[$(tput bold)\]\[\033[38;5;247m\]\h\[$(tput sgr0)\]:\[$(tput sgr0)\]\[\033[38;5;69m\]\w\[$(tput sgr0)\]\[$(tput bold)\]\[\033[38;5;7m\]\\$\[$(tput sgr0)\]" >> .bashrc
+  213  cat .bashrc
+  214  vim .bashrc
+  215  exit
+  216  tmux ls
+  217  tmux attach-session -t5
+  218  ping ya.ru
+  219  exit
+  220  c
+  221  sdfg
+  222  d
+  223  lsmod
+  224  cat /proc/modules 
+  225  cat /proc/modules |wc -l
+  226  lsmod|wc -l
+  227  lsmod|less
+  228  lsmod|sed 1d|wc -l
+  229  lsmod|sed 1d
+  230  modinfo e1000
+  231  man insmod 
+  232  man rmmod
+  233  uname -r
+  234  ls /lib/modules/6.0.8-300.fc37.x86_64/
+  235  ls /lib/modules/6.0.8-300.fc37.x86_64/kernel/
+  236  ls /lib/modules/6.0.8-300.fc37.x86_64/kernel/drivers/net/
+  237  ls /lib/modules/6.0.8-300.fc37.x86_64/kernel/drivers/net/vmxnet3/
+  238  lsmod|grep ^vm
+  239  systemctl status ssh
+  240  systemctl status sshd
+  241  ip a
+  242  history
+  243  sudo rmmod e1000
+  244  ip a
+  245  sudo insmod e1000
+  246  sudo insmod /lib/modules/6.0.8-300.fc37.x86_64/kernel/drivers/net/ethernet/intel/e1000/e1000.ko.xz 
+  247  ip a
+  248  sudo modprobe 
+  249  sudo modprobe -h
+  250  tmux
+  251  tmux ls
+  252  tmux attach-session -t4
+  253  ssh 192.168.225.227
+  254  lsblk
+  255  cat /dev/sda1
+  256  sudo cat /dev/sda1
+  257  sudo dnf install neovim
+  258  sudo nvim /etc/udev/rules.d/70_mysdb.rule
+  259  lsblk
+  260  sudo reboot
+  261  history 
+  262  mc
+  263  journalctl -f
+  264  ssh sa@192.168.225.228
+  265  echo $PATH
+  266  whereis ifconfig
+  267  sudo dnf search net-tools
+  268  ip route
+  269  ip neigh
+  270  ssh sa@192.168.225.231
+  271  ssh sa@192.168.225.230
+  272  ssh sa@192.168.225.227
+  273  ssh sa@192.168.225.224
+  274  sudo modprobe -r e1000
+  275  ip a
+  276  sudo modprobe e1000
+  277  lsusb
+  278  sudo lsusb
+  279  sudo lspci
+  280  sudo dnf install mc tree
+  281  mc
+  282   /lib/modules/6.0.8-300.fc37.x86_64/kernel/drivers/net/ethernet/intel/e1000/
+  283  man zcat 
+  284  zcat /lib/modules/6.0.8-300.fc37.x86_64/kernel/drivers/net/ethernet/intel/e1000/e1000.ko.xz
+  285  unxz /lib/modules/6.0.8-300.fc37.x86_64/kernel/drivers/net/ethernet/intel/e1000/e1000.ko.xz /tmp/e1000.ko
+  286  unxz /lib/modules/6.0.8-300.fc37.x86_64/kernel/drivers/net/ethernet/intel/e1000/e1000.ko.xz /tmp/
+  287  sudo unxz /lib/modules/6.0.8-300.fc37.x86_64/kernel/drivers/net/ethernet/intel/e1000/e1000.ko.xz /tmp/
+  288  sudo unxz /lib/modules/6.0.8-300.fc37.x86_64/kernel/drivers/net/ethernet/intel/e1000/e1000.ko.xz /tmp
+  289  sudo unxz /lib/modules/6.0.8-300.fc37.x86_64/kernel/drivers/net/ethernet/intel/e1000/e1000.ko.xz
+  290  sudo unxz /lib/modules/6.0.8-300.fc37.x86_64/kernel/drivers/net/ethernet/intel/e1000/e1000.ko.xz --decompress
+  291  sudo unxz -d /lib/modules/6.0.8-300.fc37.x86_64/kernel/drivers/net/ethernet/intel/e1000/e1000.ko.xz
+  292  sudo cp /lib/modules/6.0.8-300.fc37.x86_64/kernel/drivers/net/ethernet/intel/e1000/e1000.ko 
+  293  mc
+  294  sudo mc /lib/modules/6.0.8-300.fc37.x86_64/kernel/drivers/net/ethernet/intel/e1000
+  295  sudo ls /lib/modules/6.0.8-300.fc37.x86_64/kernel/drivers/net/ethernet/intel/e1000
+  296  sudo ls /lib/modules/6.0.8-300.fc37.x86_64/kernel/drivers/net/ethernet/intel/e1000 -l
+  297  sudo cat /lib/modules/6.0.8-300.fc37.x86_64/kernel/drivers/net/ethernet/intel/e1000/e1000.ko 
+  298  sudo file /lib/modules/6.0.8-300.fc37.x86_64/kernel/drivers/net/ethernet/intel/e1000/e1000.ko 
+  299  sudo xz -z /lib/modules/6.0.8-300.fc37.x86_64/kernel/drivers/net/ethernet/intel/e1000/e1000.ko 
+  300  sudo ls /lib/modules/6.0.8-300.fc37.x86_64/kernel/drivers/net/ethernet/intel/e1000 -l
+  301  sudo dnf search dkms
+  302  sudo dnf install dkms
+  303  dkms status 
+  304  sudo dkms status 
+  305  modinfo ixgbe
+  306  ls -l
+  307  sudo tar -xf ixgbe-5.17.1.tar -C /usr/local/src
+  308  sudo mv /usr/local/src/ixgbe-5.17.1/src/ /usr/src/ixgbe-5.17.1
+  309  sudo vim /usr/src/ixgbe-5.17.1/dkms.conf
+  310  ls /lib/modules/
+  311  ls /lib/modules/ -l
+  312  ls  /lib/modules/6.0.8-300.fc37.x86_64/kernel/drivers/net/ethernet/intel/ixgbe/
+  313  modinfo ixgbe
+  314  sudo dkms add -m ixgbe -v 5.17.1 
+  315  sudo dkms build -m ixgbe -v 5.17.1
+  316  cat /var/lib/dkms/ixgbe/5.17.1/build/make.log
+  317  ls /etc/modprobe.d/
+  318  ls /etc/modprobe.d/firewalld-sysctls.conf 
+  319  cat /etc/modprobe.d/firewalld-sysctls.conf 
+  320  cat /etc/modprobe.d/lockd.conf 
+  321  ls /dev/
+  322  man udevadm 
+  323  ls /usr/lib/udev/rules.d/
+  324  less /usr/lib/udev/rules.d/60-cdrom_id.rules 
+  325  sudo lsblk -f
+  326  blkid /dev/sda2
+  327  sudo blkid /dev/sda2
+  328  lsblk -f
+  329  less /usr/lib/udev/rules.d/60-cdrom_id.rules 
+  330  ls /usr/lib/udev/rules.d/
+  331  less /usr/lib/udev/rules.d/99-nfs.rules 
+  332  ls /etc/udev/rules.d/
+  333  sudo vim /etc/udev/rules.d/99-fitbit.rules
+  334  cat /usr/lib/udev/rules.d/99-qemu-guest-agent.rules 
+  335  man fstab
+  336  man sshd_config 
+  337  man udev
+  338  man udevadm 
+  339  man udev
+  340  man udev'
+  341  man udev
+  342  lsblk -f
+  343  ls /usr/lib/modules/6.0.8-300.fc37.x86_64/kernel/drivers/net/ethernet/realtek/
+  344  sudo insmod /usr/lib/modules/6.0.8-300.fc37.x86_64/kernel/drivers/net/ethernet/realtek/8139too.ko.xz 
+  345  sudo insmod /usr/lib/modules/6.0.8-300.fc37.x86_64/kernel/drivers/net/ethernet/realtek/8139cp.ko.xz 
+  346  sudo modprobe 8139too
+  347  ssh 192.168.225.222
+  348  exit
+  349  ssh 192.168.225.222
+  350  exit
+  351  curl cheat.sh/nmap
+  352  curl cheat.sh/nmap|less
+  353  exit
+  354  ssh 192.168.225.230
+  355  ssh sa@192.168.225.228
+  356  tmux ls
+  357  tmux
+  358  exit
+  359  ssh 10.10.100.2
+  360  ip a
+  361  ssh 10.10.100.12
+  362  ssh 10.10.100.4
+  363  ssh 10.10.100.1
+  364  sudo hostnamectl set-hostname pvoitnew
+  365  exit
+  366  exit
+  367  exit
+  368  nmcli con sh
+  369  nmcli con d ens332
+  370  nmcli con d ens32
+  371  sudo nmcli con d ens32
+  372  man ip
+  373  ip addr
+  374  ifconfig 
+  375  sudo dnf info net-tools
+  376  ip a
+  377  ip route 
+  378  ip neighbo
+  379  man ss
+  380  man netstat
+  381  sudo ip a a 10.10.100.2/24 iface ens33
+  382  sudo ip a a 10.10.100.2/24 dev ens33
+  383  ip a
+  384  ping 10.10.100.2
+  385  ping 10.10.100.1
+  386  cat /etc/resolv.conf 
+  387  sudo systemctl status NetworkManager
+  388  nmcli c s
+  389  nmcli con sh
+  390  sudo nmcli connection add con-name demostand ifname ens33
+  391  sudo nmcli connection add con-name demostand ifname ens33 type ethernet 
+  392  nmcli c s
+  393  nmcli con show demostand 
+  394  nmcli con modify demostand ipv4.method manual 
+  395  nmcli con modify demostand ipv4.addresses 10.10.100.12/24
+  396  sudo nmcli con modify demostand ipv4.addresses 10.10.100.12/24
+  397  sudo nmcli con modify demostand ipv4.method manual 
+  398  nmcli c s demostand 
+  399  nmcli dev s
+  400  sudo nmcli con modify demostand +ipv4.addresses 10.10.200.2/24
+  401  nmcli c s demostand 
+  402  nmcli con up demostand 
+  403  sudo nmcli con up demostand 
+  404  ip a
+  405  ping 10.10.100.1
+  406  man nmcli
+  407  sudo nmtui
+  408  sudo dnf install nmtui
+  409  sudo dnf search nmtui 
+  410  sudo dnf search NetworkManager
+  411  sudo dnf install NetworkManager-tui
+  412  sudo nmtui
+  413  ping ya.ru
+  414  traceroute ya.ru
+  415  tracepath ya.ru
+  416  dig ya.ru
+  417  dig rbc.ru
+  418  dig linked.in
+  419  man nmap
+  420  sudo dnf install nmap-3:7.93-1.fc37.x86_64 
+  421  nmap 192.168.225.222
+  422  nmap 192.168.225.222 -Pn
+  423  curl cheat.sh/nmapq
+  424  nmap 192.168.225.222 -PnO
+  425  nmap 192.168.225.222 -PnOv -T5
+  426  nmap -T0 192.168.225.222
+  427  ssh 10.10.100.1
+  428  ip a
+  429  ping ya.ru
+  430  ping 1.1.1.1
+  431  sudo nmcli 
+  432  sudo nmtui
+  433  sudo nmcli c u demostand 
+  434  ping 11.1.1.1
+  435  ping 1.1.1.1
+  436  ping 192.168.225.50
+  437  ping 1.1.1.1
+  438  ping 8.8.8.8
+  439  sudo reboot
+  440  nmcl c s
+  441  nmcli c s
+  442  sudo nmcli con add con-name voitelev
+  443  sudo nmcli con add con-name voitelev 
+  444  sudo nmcli con add con-name voitelev type ethernet
+  445  nmcli c s
+  446  sudo nmcli con d voitelev 
+  447  sudo nmcli con modify voitelev connection.interface-name ens32
+  448  nmcli c s
+  449  sudo nmcli con modify voitelev connection.interface-name ens33
+  450  ip a
+  451  sudo nmcli con modify voitelev ipv4.addresses 10.10.223.2/24
+  452  sudo nmcli con modify voitelev ipv4.method manual 
+  453  sudo nmcli con modify voitelev ipv4.dns 1.1.1.1
+  454  nmcli con up voitelev 
+  455  nmcli c s
+  456  ip a
+  457  sudo nmcli c d ens32
+  458  nmcli c s ens32
+  459  sudo nmcli c m ens32 connection.autoconnect no
+  460  sudo nmcli c d voitelev 
+  461  sudo nmcl c s 
+  462  sudo nmcli c s 
+  463  sudo nmcli connection delete voitelev 
+  464  sudo nmcli c s 
+  465  ip a
+  466  history 
+  467  history |less
+  468  ping 10.10.100.1
+  469  ping 1.1.1.1
+  470  history 
+  471  history -a
+  472  history 
+  473  exit
+  474  history 
+  475  vim makecon.sh
+  476  sudo nmtui
+  477  exit
+  478  ip a
+  479  ping 1.1.1.1
+  480  ip a
+  481  ping ya.ru
+  482  traceroute ya.ru
+  483  шз ф
+  484  ip a
+  485  sudo vim /etc/ssh/sshd_config
+  486  sudo cat /etc/ssh/sshd_config|grep vim#
+  487  sudo cat /etc/ssh/sshd_config|grep -i ^#
+  488  sudo cat /etc/ssh/sshd_config
+  489  sudo semanage port -a -t ssh_port_t -p tcp 2222
+  490  sudo firewall-cmd --add-port=2222/tcp
+  491  sudo firewall-cmd --add-port=2222/tcp --permanent
+  492  sudo firewall-cmd --reload
+  493  sudo systemctl restart sshd
+  494  sudo ss -tunp
+  495  exit
+  496  history 
+  497  man semanage
+  498  ssh-keygen 
+  499  ls .ssh/
+  500  ls .ssh/ -l
+  501  exit
+  502  ls .ssh/
+  503  ls .ssh/ -l
+  504  cat .ssh/authorized_keys 
+  505  sudo vim /etc/ssh/sshd_config
+  506  sudo systemctl restart sshd
+  507  exit
+  508  exitt
+  509  exit
+  510  scp /etc/fstab new:~/l102_fstab.backup
+  511  scp /etc/fstab sa@10.10.100.12:~/l102_fstab.backup -P2222
+  512  scp /etc/fstab sa@10.10.100.12:~/l102_fstab.backup -P 2222
+  513  scp -P 2222 /etc/fstab sa@10.10.100.12:~/l102_fstab.backup
+  514  exit
+  515  curl localhost
+  516  systemctl status httpd
+  517  systemctl enable --now httpd
+  518  sudo systemctl enable --now httpd
+  519  password
+  520  sudo systemctl enable --now httpd
+  521  curl localhost
+  522  exit
+  523  ping 1.1.1.1
+  524  nmap 10.10.100.1 -P
+  525  nmap 10.10.100.1 -Pn
+  526  ssh-keygen 
+  527  ssh-copy-id 10.10.100.1
+  528  exit
+  529  ssh 10.10.100.1
+  530  ls .ssh/
+  531  ls .ssh/ -l
+  532  exit
+  533  ip r
+  534  ping 8.8.8.8
+  535  exit
+  536  ip a
+  537  sudo systemctl status chronyd
+  538  sudo cat /etc/chrony.conf 
+  539  sudo vim /etc/chrony.conf 
+  540  sudo systemctl restart chronyd
+  541  sudo chronyc sources
+  542  sudo systemctl restart chronyd
+  543  sudo chronyc sources
+  544  sudo firewall-cmd --add-port=123/udp --permanent
+  545  sudo firewall-cmd --reload
+  546  sudo chronyc sources
+  547  sudo systemctl restart chronyd
+  548  sudo chronyc sources
+  549  exit
+  550  sudo vim /etc/hosts
+  551  exit
+  552  sudo ls 
+  553  exit
+  554  df -h
+  555  sudo du -sh /var/log
+  556  man logrotate
+  557  sudo vim /etc/logrotate.conf
+  558  sudo vim /etc/logrotate.d/dnf 
+  559  sudo vim /etc/logrotate.d/firewalld 
+  560  sudo vim /etc/logrotate.d/bootlog 
+  561  man logrotate
+  562  учше
+  563  exit
+  564  sudo chronyc sources
+  565  sudo systemctl status systemd-journald.service 
+  566  sudo journalctl --list-boots 
+  567  journalctl --disk-usage 
+  568  sudo vim /etc/systemd/journald.conf 
+  569  sudo firewall-cmd --add-port=123/udp -
+  570  journalctl -u chronyd
+  571  journalctl -u chronyd -b 3
+  572  journalctl -u chronyd -b 4
+  573  journalctl -u chronyd -b 1
+  574  journalctl -u chronyd -b 0
+  575  journalctl -u chronyd -b 1
+  576   sudo vim /etc/rsyslog.conf 
+  577  sudo systemctl restart rsyslog.service 
+  578  sudo systemctl status rsyslog.service 
+  579  sudo ls
+  580  tmux
+  581  sudo dnf search rsyslog
+  582  sudo reboot
+  583  ip r
+  584  ping 
+  585  ping 10.10.2.1
+  586  ping 10.10.2.2
+  587  traceroute 10.10.2.1
+  588  traceroute 10.10.2.2
+  589  history >new.hist

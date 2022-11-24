@@ -1,0 +1,824 @@
+    1  exit
+    2  cd /etc/ssh
+    3  exit
+    4  cd /etc/ssh
+    5  exit
+    6  sudo su -
+    7  vim .bashrc 
+    8  ip a
+    9  systemctl status sshd
+   10  vim .bashrc
+   11  bash
+   12  exit
+   13  sudo rebot
+   14  sudo reboot
+   15  vim .bashrc
+   16  bash
+   17  vim .bashrc
+   18  bash
+   19  vim .bashrc
+   20  bash
+   21  vim .bashrc
+   22  bash
+   23  vim .bashrc
+   24  bash
+   25  vim .bashrc
+   26  sudo su -
+   27  ls -l
+   28  ls- l /usr/
+   29  ls -l /usr/
+   30  exit
+   31  sudo su -
+   32  exit
+   33  sudo reboot
+   34  sudo dnf update
+   35  tmux
+   36  sudo dnf install tmux
+   37  tmux
+   38  sudo dnf update
+   39  sudo su -
+   40  sudo dnf install ansible
+   41  sudo poweroff
+   42  exit
+   43  sudo poweroff 
+   44  sudo apt update
+   45  sudo dnf update
+   46  ls -l
+   47  sudo dnf install neovim
+   48  nvim .bashrc 
+   49  exit
+   50  su -
+   51  sudo su
+   52  cd /etc/
+   53  cd ;nvim .bashrc
+   54  sudo su
+   55  sudo su -
+   56  exit
+   57  ps -ef
+   58  ping ya.ru
+   59  cat /etc/fsatb
+   60  cat /etc/fstab 
+   61  echo "carrot sandy
+   62  wasabi luke
+   63  sandwich brian
+   64  salad ryan
+   65  spaghetti jessica" > favorite_food.txt
+   66  awk '{print}' favorite_food.txt
+   67  awk '/sand/' favorite_food.txt
+   68  awk '/^sand/ {print $1;}' favorite_food.txt
+   69  sudo systemctl status sshd
+   70  history 
+   71  awk 'BEGIN { action; }
+   72  /search/ { action; }
+   73  END { action; }' input_file
+   74  awk 'BEGIN { FS=":"; }
+   75  { print $1; }' /etc/passwd
+   76  awk 'BEGIN { FS=":"; }
+   77  { print $1; }' /etc/passwd
+   78  awk 'BEGIN { print "We can use awk like the echo command"; }'
+   79  echo "1 carrot sandy
+   80  2 wasabi luke
+   81  3 sandwich brian
+   82  4 salad ryan
+   83  5 spaghetti jessica" > favorite_food.txt
+   84  echo "1 carrot sandy
+   85  2 wasabi luke
+   86  3 sandwich brian
+   87  4 salad ryan
+   88  5 spaghetti jessica" > favorite_food.txt
+   89  awk '$2 ~ /^sa/' favorite_food.txt
+   90  ip a s eth0
+   91  ip a
+   92  ip a s ens192
+   93  ip a s ens192 | awk -F '[\/ ]+' '/inet / {print $3}'
+   94  ip a s ens192 | awk -F '\/`+' '/inet / {print $3}'
+   95  ip a s ens192 | awk -F '\/'+' '/inet / {print $3}'
+   96  ip a s ens192 | awk -F '/+' '/inet / {print $3}'
+   97  ip a s ens192 | awk -F '/ ' '/inet / {print $3}'
+   98  ip a s ens192 | awk -F '[/ ]+' '/inet / {print $3}'
+   99  cd
+  100  cp /usr/share/common-licenses/BSD .
+  101  echo "this is the song that never ends
+  102  yes, it goes on and on, my friend
+  103  some people started singing it
+  104  not knowing what it was
+  105  and they'll continue singing it forever
+  106  just because..." > song.txt
+  107  vim mynewtestfile.sh
+  108  chmod +x mynewtestfile.sh 
+  109  ./mynewtestfile.sh 
+  110  cat .bashrc
+  111  exit
+  112  sudo hostnamectl set-hostname pvoit000
+  113  exit
+  114  ip a
+  115  sudo ip a a 10.10.100.1/24 dev ens224
+  116  ip a
+  117  exit
+  118  ping 10.10.100.1
+  119  ip a
+  120  sudo ip a a 10.10.100.1/24 dev ens224
+  121  ip a
+  122  ping 10.10.100.1
+  123  ping 10.10.100.2
+  124  exit
+  125  sudo hostnamectl set-hostname pv_l102
+  126  exit
+  127  sudo hostnamectl set-hostname pvoitl102
+  128  exit
+  129  ssh 10.10.100.12
+  130  sudo firewall-cmd --list-all
+  131  sudo firewall-cmd --list-all-zones 
+  132  ip a
+  133  sudo firewall-cmd --list-all-zones 
+  134  sudo firewall-cmd --list-all-zones |grep ens192
+  135  sudo firewall-cmd --list-all-zones |grep ens224
+  136  sudo firewall-cmd --permanent --direct --add-rule ipv4 nat POSTROUTING 0 -o ens192 -j MASQUERADE
+  137  sudo firewall-cmd --direct --permanent --add-rule ipv4 filter FORWARD 0 -i ens224 -o ens192 -j ACCEPT
+  138  sudo firewall-cmd --direct --permanent --add-rule ipv4 filter FORWARD 0 -i ens192 -o ens224 -m state --state RELATED,ESTABLISHED -j ACCEPT
+  139  sudo systemctl restart firewalld
+  140  sudo vim /etc/sysctl.conf 
+  141  sudo vim /etc/sysctl.d/99-sysctl.conf 
+  142  sudo sysctl -p /etc/sysctl.conf
+  143  sudo firewall-cmd --list-all-zones
+  144  sudo firewall-cmd --permanent --zone=internal --add-interface=ens224
+  145  sudo systemctl restart firewalld
+  146  sudo firewall-cmd --list-all-zones
+  147  sudo firewall-cmd --permanent --zone=internal --add-masquerade
+  148  sudo firewall-cmd --reload
+  149  sudo su
+  150  sudo firewall-cmd --permanent --list-all
+  151  sudo firewall-cmd --permanent --list-all-zones 
+  152  sudo firewall-cmd --list-all-zones|grep ens19
+  153  sudo firewall-cmd --list-all-zones|less
+  154  sudo firewall-cmd --permanent --zone=FedoraServer --add-forward
+  155  sudo firewall-cmd --reload
+  156  sudo firewall-cmd --permanent --add-masquerade
+  157  sudo firewall-cmd --list-all-zones|less
+  158  sudo firewall-cmd --reload
+  159  sudo firewall-cmd --list-all-zones|less
+  160  sudo reboot
+  161  ssh 10.10.100.1
+  162  ssh 10.10.100.12
+  163  ip a
+  164  sudo nmtui
+  165  sudo dnf install NetworkManager-tui
+  166  sudo nmtui
+  167  sudo nmcli c u demostend 
+  168  ping 10.10.100.12
+  169  ssh 10.10.100.12
+  170  history 
+  171  clear
+  172  ip a
+  173  ssh 10.10.100.12
+  174  firewall-cmd 
+  175  firewall-cmd --list-all-zones 
+  176  sudo firewall-cmd --list-all-zones 
+  177  sudo firewall-cmd --list-all
+  178  sudo firewall-cmd --list-all --zone=public 
+  179  sudo firewall-cmd --list-all --zone=public --permanent
+  180  sudo firewall-cmd --state
+  181  sudo firewall-cmd --get-default-zone 
+  182  sudo firewall-cmd --get-active-zones 
+  183  sudo firewall-cmd --list-all
+  184  sudo firewall-cmd --get-zone
+  185  sudo firewall-cmd --get-zones
+  186  sudo firewall-cmd --zone=internal --change-interface=ens224
+  187  sudo firewall-cmd --get-active-zones 
+  188  sudo firewall-cmd --zone=FedoraServer --change-interface=ens224
+  189  sudo firewall-cmd --get-active-zones 
+  190  sudo firewall-cmd --get-services 
+  191  sudo firewall-cmd --zone=FedoraServer --add-service=zabbix-server --permanent 
+  192  sudo firewall-cmd --list-all
+  193  sudo firewall-cmd --relo
+  194  sudo firewall-cmd --list-all
+  195  sudo firewall-cmd --reload
+  196  sudo firewall-cmd --list-all
+  197  ls /usr/lib/firewalld/
+  198  ls /usr/lib/firewalld/services/
+  199  nvim /usr/lib/firewalld/services/zabbix-server.xml 
+  200  nvim /usr/lib/firewalld/services/ssh.xml 
+  201  nvim /usr/lib/firewalld/services/cockpit.xml.xml 
+  202  nvim /usr/lib/firewalld/services/cockpit.xml
+  203  sudo firewall-cmd --add-port=5901/tcp --zone=FedoraServer --permanent
+  204  sudo firewall-cmd --list-ports 
+  205  sudo firewall-cmd --list-ports --permanent
+  206  ls /etc/firewalld/
+  207  sudo ls /etc/firewalld/
+  208  sudo ls /etc/firewalld/ -l
+  209  sudo ls /etc/firewalld/services -l
+  210  sudo ls /etc/firewalld/services/ -l
+  211  sudo cp /usr/lib/firewalld/services/ssh.xml /etc/firewalld/services/extrassh.xml
+  212  sudo nvim /etc/firewalld/services/extrassh.xml
+  213  sudo firewall-cmd --get-services 
+  214  sudo firewalld restart
+  215  sudo firewa
+  216  sudo firewall-cmd reload
+  217  sudo firewall-cmd --reload
+  218  sudo firewall-cmd --get-services 
+  219  sudo systemctl restart firewalld.service 
+  220  sudo firewall-cmd --get-services 
+  221  sudo ls /etc/firewalld/
+  222  sudo vim /etc/firewalld/firew
+  223  sudo ls /etc/firewalld/services/
+  224  sudo ls /etc/firewalld/services/extrassh.xml
+  225  sudo vim /etc/firewalld/services/extrassh.xml
+  226  sudo firewall-cmd --reload
+  227  sudo firewall-cmd --get-services 
+  228  sudo firewall-cmd --add-service=extrassh 
+  229  sudo firewall-cmd --list-all
+  230  sudo firewall-cmd --reload
+  231  sudo firewall-cmd --list-all
+  232  sudo firewall-cmd --add-service=extrassh --permanent
+  233  sudo firewall-cmd --reload
+  234  sudo vim /etc/firewalld/services/extrassh.xml
+  235  sudo firewall-cmd --list-all
+  236  nmap 10.10.100.1
+  237  sudo firewall-cmd --add-
+  238  nmap 10.10.100.1
+  239  nmap 192.168.225.222
+  240  history 
+  241  sudo nvim /etc/ssh/sshd_config
+  242  ssh 10.10.100.12
+  243  ls .ssh/
+  244  vim .ssh/known_hosts
+  245  ssh 10.10.100.12
+  246  ssh 10.10.100.12 -p 2222
+  247  ssh 10.10.100.12 -p 2222
+  248  ssh-copy-id sa@10.10.100.12 -p 2222
+  249  ssh-copy-id -p 2222 sa@10.10.100.12
+  250  ssh 10.10.100.12 -p 2222
+  251  ls ./ssh
+  252  ls .ssh/
+  253  ls .ssh/ -l
+  254  mv .ssh/id_rsa .ssh/id_rsa.backup
+  255  ssh 10.10.100.12 -p 2222
+  256  mv .ssh/id_rsa.backup .ssh/id_rsa
+  257  ssh 10.10.100.12 -p 2222
+  258  ls /etc/ssh/ssh_config
+  259  vim /etc/ssh/ssh_config
+  260  cp /etc/ssh/ssh_config ~/.ssh/config
+  261  vim .ssh/config 
+  262  ssh new
+  263  scp /etc/fstab new:~/l102_fstab.backup
+  264  vim .ssh/config 
+  265  exit
+  266  vim .ssh/config 
+  267  systemctl status httpd
+  268  ssh new
+  269  curl localhost
+  270  exit
+  271  ssh new
+  272  ssh 192.168.225.228
+  273  ssh che
+  274  ssh new
+  275  ssh 192.168.225.228
+  276  ssh 192.168.225.214
+  277  sudo systemctl list-units |grep ssh
+  278  sudo dnf search openssh
+  279  systemctl status sshd
+  280  ip route 
+  281  nmcli c s 
+  282  nmcli c s ens192 
+  283  date
+  284  sudo systemctl restart systemd-timesyncd.service 
+  285  ssh 192.168.225.228
+  286  ssh 192.168.225.113
+  287  ssh 192.168.225.213
+  288  ip r
+  289  ping 10.10.2.1
+  290  ping 10.10.2.2
+  291  user
+  292  users
+  293  exit
+  294  ip r
+  295  ping 10.10.2.2
+  296  ping 10.10.2.1
+  297  exit
+  298  ssh sa@10.10.100.12
+  299  history
+  300     1  exit
+  301      2  cd /etc/ssh
+  302      3  exit
+  303      4  cd /etc/ssh
+  304      5  exit
+  305      6  sudo su -
+  306      7  vim .bashrc
+  307      8  ip a
+  308      9  systemctl status sshd
+  309     10  vim .bashrc
+  310     11  bash
+  311     12  exit
+  312     13  sudo rebot
+  313     14  sudo reboot
+  314     15  vim .bashrc
+  315     16  bash
+  316     17  vim .bashrc
+  317     18  bash
+  318     19  vim .bashrc
+  319     20  bash
+  320     21  vim .bashrc
+  321     22  bash
+  322     23  vim .bashrc
+  323     24  bash
+  324     25  vim .bashrc
+  325     26  sudo su -
+  326     27  ls -l
+  327     28  ls- l /usr/
+  328     29  ls -l /usr/
+  329     30  exit
+  330     31  sudo su -
+  331     32  exit
+  332     33  sudo reboot
+  333     34  sudo dnf update
+  334     35  tmux
+  335     36  sudo dnf install tmux
+  336     37  tmux
+  337     38  sudo dnf update
+  338     39  sudo su -
+  339     40  sudo dnf install ansible
+  340     41  sudo poweroff
+  341     42  exit
+  342     43  sudo poweroff
+  343     44  sudo apt update
+  344     45  sudo dnf update
+  345     46  ls -l
+  346     47  sudo dnf install neovim
+  347     48  nvim .bashrc
+  348     49  exit
+  349     50  su -
+  350     51  sudo su
+  351     52  cd /etc/
+  352     53  cd ;nvim .bashrc
+  353     54  sudo su
+  354     55  sudo su -
+  355     56  exit
+  356     57  ps -ef
+  357     58  ping ya.ru
+  358     59  cat /etc/fsatb
+  359     60  cat /etc/fstab
+  360     61  echo "carrot sandy
+  361     62  wasabi luke
+  362     63  sandwich brian
+  363     64  salad ryan
+  364     65  spaghetti jessica" > favorite_food.txt
+  365     66  awk '{print}' favorite_food.txt
+  366     67  awk '/sand/' favorite_food.txt
+  367     68  awk '/^sand/ {print $1;}' favorite_food.txt
+  368     69  sudo systemctl status sshd
+  369     70  history
+  370     71  awk 'BEGIN { action; }
+  371     72  /search/ { action; }
+  372     73  END { action; }' input_file
+  373     74  awk 'BEGIN { FS=":"; }
+  374     75  { print $1; }' /etc/passwd
+  375     76  awk 'BEGIN { FS=":"; }
+  376     77  { print $1; }' /etc/passwd
+  377     78  awk 'BEGIN { print "We can use awk like the echo command"; }'
+  378     79  echo "1 carrot sandy
+  379     80  2 wasabi luke
+  380     81  3 sandwich brian
+  381     82  4 salad ryan
+  382     83  5 spaghetti jessica" > favorite_food.txt
+  383     84  echo "1 carrot sandy
+  384     85  2 wasabi luke
+  385     86  3 sandwich brian
+  386     87  4 salad ryan
+  387     88  5 spaghetti jessica" > favorite_food.txt
+  388     89  awk '$2 ~ /^sa/' favorite_food.txt
+  389     90  ip a s eth0
+  390     91  ip a
+  391     92  ip a s ens192
+  392     93  ip a s ens192 | awk -F '[\/ ]+' '/inet / {print $3}'
+  393     94  ip a s ens192 | awk -F '\/`+' '/inet / {print $3}'
+  394     95  ip a s ens192 | awk -F '\/'+' '/inet / {print $3}'
+  395     96  ip a s ens192 | awk -F '/+' '/inet / {print $3}'
+  396     97  ip a s ens192 | awk -F '/ ' '/inet / {print $3}'
+  397     98  ip a s ens192 | awk -F '[/ ]+' '/inet / {print $3}'
+  398     99  cd
+  399    100  cp /usr/share/common-licenses/BSD .
+  400    101  echo "this is the song that never ends
+  401    102  yes, it goes on and on, my friend
+  402    103  some people started singing it
+  403    104  not knowing what it was
+  404    105  and they'll continue singing it forever
+  405    106  just because..." > song.txt
+  406    107  vim mynewtestfile.sh
+  407    108  chmod +x mynewtestfile.sh
+  408    109  ./mynewtestfile.sh
+  409    110  cat .bashrc
+  410    111  exit
+  411    112  sudo hostnamectl set-hostname pvoit000
+  412    113  exit
+  413    114  ip a
+  414    115  sudo ip a a 10.10.100.1/24 dev ens224
+  415    116  ip a
+  416    117  exit
+  417    118  ping 10.10.100.1
+  418    119  ip a
+  419    120  sudo ip a a 10.10.100.1/24 dev ens224
+  420    121  ip a
+  421    122  ping 10.10.100.1
+  422    123  ping 10.10.100.2
+  423    124  exit
+  424    125  sudo hostnamectl set-hostname pv_l102
+  425    126  exit
+  426    127  sudo hostnamectl set-hostname pvoitl102
+  427    128  exit
+  428    129  ssh 10.10.100.12
+  429    130  sudo firewall-cmd --list-all
+  430    131  sudo firewall-cmd --list-all-zones
+  431    132  ip a
+  432    133  sudo firewall-cmd --list-all-zones
+  433    134  sudo firewall-cmd --list-all-zones |grep ens192
+  434    135  sudo firewall-cmd --list-all-zones |grep ens224
+  435    136  sudo firewall-cmd --permanent --direct --add-rule ipv4 nat POSTROUTING 0 -o ens192 -j MASQUERADE
+  436    137  sudo firewall-cmd --direct --permanent --add-rule ipv4 filter FORWARD 0 -i ens224 -o ens192 -j ACCEPT
+  437    138  sudo firewall-cmd --direct --permanent --add-rule ipv4 filter FORWARD 0 -i ens192 -o ens224 -m state --state RELATED,ESTABLISHED -j ACCEPT
+  438    139  sudo systemctl restart firewalld
+  439    140  sudo vim /etc/sysctl.conf
+  440    141  sudo vim /etc/sysctl.d/99-sysctl.conf
+  441    142  sudo sysctl -p /etc/sysctl.conf
+  442    143  sudo firewall-cmd --list-all-zones
+  443    144  sudo firewall-cmd --permanent --zone=internal --add-interface=ens224
+  444    145  sudo systemctl restart firewalld
+  445    146  sudo firewall-cmd --list-all-zones
+  446    147  sudo firewall-cmd --permanent --zone=internal --add-masquerade
+  447    148  sudo firewall-cmd --reload
+  448    149  sudo su
+  449    150  sudo firewall-cmd --permanent --list-all
+  450    151  sudo firewall-cmd --permanent --list-all-zones
+  451    152  sudo firewall-cmd --list-all-zones|grep ens19
+  452    153  sudo firewall-cmd --list-all-zones|less
+  453    154  sudo firewall-cmd --permanent --zone=FedoraServer --add-forward
+  454    155  sudo firewall-cmd --reload
+  455    156  sudo firewall-cmd --permanent --add-masquerade
+  456    157  sudo firewall-cmd --list-all-zones|less
+  457    158  sudo firewall-cmd --reload
+  458    159  sudo firewall-cmd --list-all-zones|less
+  459    160  sudo reboot
+  460    161  ssh 10.10.100.1
+  461    162  ssh 10.10.100.12
+  462    163  ip a
+  463    164  sudo nmtui
+  464    165  sudo dnf install NetworkManager-tui
+  465    166  sudo nmtui
+  466    167  sudo nmcli c u demostend
+  467    168  ping 10.10.100.12
+  468    169  ssh 10.10.100.12
+  469    170  history
+  470    171  clear
+  471    172  ip a
+  472    173  ssh 10.10.100.12
+  473    174  firewall-cmd
+  474    175  firewall-cmd --list-all-zones
+  475    176  sudo firewall-cmd --list-all-zones
+  476    177  sudo firewall-cmd --list-all
+  477    178  sudo firewall-cmd --list-all --zone=public
+  478    179  sudo firewall-cmd --list-all --zone=public --permanent
+  479    180  sudo firewall-cmd --state
+  480    181  sudo firewall-cmd --get-default-zone
+  481    182  sudo firewall-cmd --get-active-zones
+  482    183  sudo firewall-cmd --list-all
+  483    184  sudo firewall-cmd --get-zone
+  484    185  sudo firewall-cmd --get-zones
+  485    186  sudo firewall-cmd --zone=internal --change-interface=ens224
+  486    187  sudo firewall-cmd --get-active-zones
+  487    188  sudo firewall-cmd --zone=FedoraServer --change-interface=ens224
+  488    189  sudo firewall-cmd --get-active-zones
+  489    190  sudo firewall-cmd --get-services
+  490    191  sudo firewall-cmd --zone=FedoraServer --add-service=zabbix-server --permanent
+  491    192  sudo firewall-cmd --list-all
+  492    193  sudo firewall-cmd --relo
+  493    194  sudo firewall-cmd --list-all
+  494    195  sudo firewall-cmd --reload
+  495    196  sudo firewall-cmd --list-all
+  496    197  ls /usr/lib/firewalld/
+  497    198  ls /usr/lib/firewalld/services/
+  498    199  nvim /usr/lib/firewalld/services/zabbix-server.xml
+  499    200  nvim /usr/lib/firewalld/services/ssh.xml
+  500    201  nvim /usr/lib/firewalld/services/cockpit.xml.xml
+  501    202  nvim /usr/lib/firewalld/services/cockpit.xml
+  502    203  sudo firewall-cmd --add-port=5901/tcp --zone=FedoraServer --permanent
+  503    204  sudo firewall-cmd --list-ports
+  504    205  sudo firewall-cmd --list-ports --permanent
+  505    206  ls /etc/firewalld/
+  506    207  sudo ls /etc/firewalld/
+  507    208  sudo ls /etc/firewalld/ -l
+  508    209  sudo ls /etc/firewalld/services -l
+  509    210  sudo ls /etc/firewalld/services/ -l
+  510    211  sudo cp /usr/lib/firewalld/services/ssh.xml /etc/firewalld/services/extrassh.xml
+  511    212  sudo nvim /etc/firewalld/services/extrassh.xml
+  512    213  sudo firewall-cmd --get-services
+  513    214  sudo firewalld restart
+  514    215  sudo firewa
+  515    216  sudo firewall-cmd reload
+  516    217  sudo firewall-cmd --reload
+  517    218  sudo firewall-cmd --get-services
+  518    219  sudo systemctl restart firewalld.service
+  519    220  sudo firewall-cmd --get-services
+  520    221  sudo ls /etc/firewalld/
+  521    222  sudo vim /etc/firewalld/firew
+  522    223  sudo ls /etc/firewalld/services/
+  523    224  sudo ls /etc/firewalld/services/extrassh.xml
+  524    225  sudo vim /etc/firewalld/services/extrassh.xml
+  525    226  sudo firewall-cmd --reload
+  526    227  sudo firewall-cmd --get-services
+  527    228  sudo firewall-cmd --add-service=extrassh
+  528    229  sudo firewall-cmd --list-all
+  529    230  sudo firewall-cmd --reload
+  530    231  sudo firewall-cmd --list-all
+  531    232  sudo firewall-cmd --add-service=extrassh --permanent
+  532    233  sudo firewall-cmd --reload
+  533    234  sudo vim /etc/firewalld/services/extrassh.xml
+  534    235  sudo firewall-cmd --list-all
+  535    236  nmap 10.10.100.1
+  536    237  sudo firewall-cmd --add-
+  537    238  nmap 10.10.100.1
+  538    239  nmap 192.168.225.222
+  539    240  history
+  540    241  sudo nvim /etc/ssh/sshd_config
+  541    242  ssh 10.10.100.12
+  542    243  ls .ssh/
+  543    244  vim .ssh/known_hosts
+  544    245  ssh 10.10.100.12
+  545    246  ssh 10.10.100.12 -p 2222
+  546    247  ssh 10.10.100.12 -p 2222
+  547    248  ssh-copy-id sa@10.10.100.12 -p 2222
+  548    249  ssh-copy-id -p 2222 sa@10.10.100.12
+  549    250  ssh 10.10.100.12 -p 2222
+  550    251  ls ./ssh
+  551    252  ls .ssh/
+  552    253  ls .ssh/ -l
+  553    254  mv .ssh/id_rsa .ssh/id_rsa.backup
+  554    255  ssh 10.10.100.12 -p 2222
+  555    256  mv .ssh/id_rsa.backup .ssh/id_rsa
+  556    257  ssh 10.10.100.12 -p 2222
+  557    258  ls /etc/ssh/ssh_config
+  558    259  vim /etc/ssh/ssh_config
+  559    260  cp /etc/ssh/ssh_config ~/.ssh/config
+  560    261  vim .ssh/config
+  561    262  ssh new
+  562    263  scp /etc/fstab new:~/l102_fstab.backup
+  563    264  vim .ssh/config
+  564    265  exit
+  565    266  vim .ssh/config
+  566    267  systemctl status httpd
+  567    268  ssh new
+  568    269  curl localhost
+  569    270  exit
+  570    271  ssh new
+  571    272  ssh 192.168.225.228
+  572    273  ssh che
+  573    274  ssh new
+  574    275  ssh 192.168.225.228
+  575    276  ssh 192.168.225.214
+  576    277  sudo systemctl list-units |grep ssh
+  577    278  sudo dnf search openssh
+  578    279  systemctl status sshd
+  579    280  ip route
+  580    281  nmcli c s
+  581    282  nmcli c s ens192
+  582    283  date
+  583    284  sudo systemctl restart systemd-timesyncd.service
+  584    285  ssh 192.168.225.228
+  585    286  ssh 192.168.225.113
+  586    287  ssh 192.168.225.213
+  587    288  ip r
+  588    289  ping 10.10.2.1
+  589    290  ping 10.10.2.2
+  590    291  user
+  591    292  users
+  592    293  exit
+  593    294  ip r
+  594    295  ping 10.10.2.2
+  595    296  ping 10.10.2.1
+  596    297  exit
+  597    298  ssh sa@10.10.100.12
+  598    299  history
+  599  ssh 10.10.100.12 -p 2222
+  600  exit
+  601  sudo chronyc source
+  602  sudo chronyc sources
+  603  sudo chronyc local 
+  604  sudo chronyc activity 
+  605  ss -uanp
+  606  sudo chronyc sources
+  607  sudo dnf search wireshark
+  608  sudo dnf search tshark
+  609  sudo dnf info wireshark-cli
+  610  sudo dnf install wireshark-cli
+  611  c
+  612  ip
+  613  sudo tshark -i ens224 -f "tcp.udp == 123"
+  614  sudo tshark -i ens224 -f "tcp.udp 123"
+  615  sudo tshark -i ens224 -f "port.udp == 123"
+  616  sudo tshark -i ens224 -f "port 123"
+  617  sudo tshark -i ens224 -R "udp.port == 123"
+  618  sudo tshark -i ens224 -Y "udp.port == 123"
+  619  journalctl --disk-usage 
+  620  journalctl --list-boots 
+  621  journalctl -u chronyd.service -b 10
+  622  journalctl -u chronyd.service -b -10
+  623  journalctl -u chronyd.service --since yesterday
+  624  journalctl -u chronyd.service --since "2022-01-10"
+  625  journalctl -u chronyd.service --since "2022-01-11"
+  626  journalctl -since "2022-10-01"
+  627  journalctl --since "2022-10-01"
+  628  history 
+  629  journalctl --since today
+  630  journalctl -k
+  631  journalctl -k -a
+  632  journalctl -k -b -10
+  633  journalctl -u sshd  -b -10
+  634  journalctl -u sshd
+  635  journalctl -u sshd > sshd.journal.log
+  636  sudo systemctl status rsyslog.service 
+  637  sudo systemctl status syslog.
+  638  sudo systemctl status syslog.service 
+  639  sudo vim /etc/rsyslog.conf 
+  640  sudo systemctl restart rsyslog.service 
+  641  sudo firewall-cmd --add-port=514/tcp
+  642  sudo firewall
+  643  sudo firewall-cmd --add-port=514/tcp --permanent 
+  644  sudo firewall-cmd --add-port=514/udp --permanent 
+  645  sudo firewall-cmd --reload
+  646  sudo tshark -i ens224 -Y "udp.port == 514"
+  647  sudo tail -f /var/log/messages 
+  648  sudo tail -f /var/log/messages |grep failed
+  649  sudo dnf install mariadb-server-
+  650  sudo dnf install mariadb-server
+  651  sudo mysql_secure_installation 
+  652  sudo systemctl status mariadb.service 
+  653  sudo systemctl enable --now mariadb.service 
+  654  sudo systemctl status mariadb.service 
+  655  sudo mysql_secure_installation 
+  656  sudo dnf install rsyslog-mysql
+  657  ls /etc/rsyslog.d/
+  658  ls /usr/share/doc/rsyslog/
+  659  vim /usr/share/doc/rsyslog/README.md 
+  660  vim /usr/share/doc/rsyslog/mysql-createDB.sql 
+  661  sudo tshark -i ens224 -Y "udp.port == 514"
+  662  sudo dnf install rsyslog-doc
+  663  ls /usr/share/doc/rsyslog/
+  664  ls /usr/share/doc/rsyslog/ -l
+  665  ls /usr/share/doc/rsyslog/html/ -l
+  666  sudo systemctl status httpd
+  667  sudo systemctl status ht
+  668  sudo dnf install hjttpd
+  669  sudo apt install apache2
+  670  sudo dnf search lvm2
+  671  sudo firewall-cmd --add-port=80/tcp
+  672  ip a
+  673  systemctl status httpd
+  674  systemctl enable --now httpd
+  675  sudo systemctl enable --now httpd
+  676  sudo ln -s /usr/share/doc/rsyslog/html/ /var/www/html/rsyslog
+  677  ls /var/www/html/
+  678  ls /var/www/html/ -l
+  679  sudo ss -tuanp
+  680  sudo ss -tuanp|grep cups
+  681  sudo ss -tuanp|grep cup
+  682  sudo systemctl status cups
+  683  sudo dnf search cups
+  684  sudo dnf install cups
+  685  sudo systemctl status cups
+  686  sudo systemctl status cups.service 
+  687  sudo systemctl enable --now cups.service 
+  688  sudo systemctl status cups.service 
+  689  sudo ss -tuanp|grep c
+  690  sudo ss -tuanp|grep cups
+  691  sudo firewall-cmd --add-port=631/tcp
+  692  sudo firewall-cmd --add-port=631/tcp --permanent 
+  693  sudo firewall-cmd --reload
+  694  journalctl -f
+  695  curl localhost:631
+  696  exit
+  697  curl localhost:631
+  698  sudo firewall-cmd --reload
+  699  ip a
+  700  systemctl status httpd
+  701  exit
+  702  firewall-cmd --list-all
+  703  sudo firewall-cmd --list-all
+  704  sudo firewall-cmd --add-port=80/tcp --permanent 
+  705  sudo firewall-cmd --reload
+  706  man setenforce 
+  707  sudo setenforce 0
+  708  sudo sestatus 
+  709  sudo systemctl status cockpit
+  710  sudo systemctl start cockpit
+  711  sudo systemctl start cups-browsed.service 
+  712  exit
+  713  sudo vim /etc/ssh/sshd_config
+  714  exit
+  715  sudo dnf search cups
+  716  sudo dnf install cups-pdf
+  717  sudo systemctl restart cupsd
+  718  sudo systemctl restart cups.service 
+  719  sudo tail -f /var/log/messages 
+  720  sudo tail -f /var/log/messages |grep cups
+  721  ls /var/spool/cups-pdf/
+  722  ls /var/spool/cups-pdf/SPOOL/
+  723  ls /var/spool/cups-pdf/SPOOL/ -la
+  724  exit
+  725  df -h
+  726  ssh new
+  727  systemctl status chronyd
+  728  history 
+  729  who
+  730  exit
+  731  whereis semanage
+  732  sudo dnf search semanage
+  733  sudo dnf info libsemanage-nage
+  734  sudo dnf info libsemanage
+  735  sudo dnf search semanage
+  736  whereis semanage
+  737  man rpm
+  738  sudo rpm -f /usr/sbin/semanage
+  739  sudo rpm -q /usr/sbin/semanage
+  740  man rpm
+  741  sudo rpm -l libsemanage
+  742  sudo rpm -l /usr/sbin/semanage
+  743  sudo rpm -qf /usr/sbin/semanage
+  744  date
+  745  date -u
+  746  date +%d%m
+  747  date +%d%m%y
+  748  date +%d%m%Y
+  749  date +%d%m%Y %H%M
+  750  date +%d%m%Y-%H%M
+  751  date +%d%m%Y-%H:%M
+  752  sudo hwclock 
+  753  timedatectl 
+  754  timedatectl set-time '2022-11-24 14:18:00'
+  755  sudo systemctl status systemd-timesyncd.service 
+  756  timedatectl list-timezones 
+  757  timedatectl list-timezones |Mos
+  758  timedatectl list-timezones |grep Mos
+  759  sudo timedatectl set-timezone Europe/Moscow 
+  760  timedatectl
+  761  sudo system
+  762  sudo systemctl status systemd-timedated.service 
+  763  sudo systemctl status systemd-timesyncd.service 
+  764  sudo systemctl status chronyd.service 
+  765  timedatectl show-timesync --all
+  766  sudo systemctl status ntpd
+  767  sudo systemctl status ntpd.service 
+  768  sudo systemctl list-unit-files |grep ntp
+  769  sudo systemctl list-units |grep ntp
+  770  sudo systemctl list-units |grep time
+  771  ntpq
+  772  ntpq -p
+  773  sudo systemctl start chronyd
+  774  sudo systemctl status chronyd
+  775  sudo systemctl status systemd-timesyncd.service 
+  776  sudo systemctl status chronyd
+  777  chronyc tracking 
+  778  chronyc sources
+  779  chronyc ntpdata 
+  780  sudo chronyc ntpdata 
+  781  sudo vim /etc/chrony.conf
+  782  sudo systemctl restart chronyd
+  783  chronyc ntpdata 
+  784  sudo chronyc ntpdata 
+  785  chronyc sources
+  786  chronyc tracking 
+  787  sudo firewall-cmd --list-ports 
+  788  sudo firewall-cmd --list-all
+  789  sudo cat /usr/lib/firewalld/services/ntp.xml 
+  790  sudo firewall-cmd --add-service=ntp --permanent
+  791  sudo firewall-cmd --reload
+  792  ip a
+  793  cat .ssh/config 
+  794  ssh new
+  795  ip r
+  796  ip a
+  797  ip r
+  798  ping 10.10.2.1
+  799  ping 10.10.2.2
+  800  ip r
+  801  mncli connection modify ens192 ipv4.routes "10.10.2.0/24 192.168.225.252"
+  802  nmcli connection modify ens192 ipv4.routes "10.10.2.0/24 192.168.225.252"
+  803  nmcli connection up ens192
+  804  ip r
+  805  pinh 10.10.2.1
+  806  ping 10.10.2.1
+  807  ping 10.10.2.2
+  808  ip a
+  809  ping 10.10.2.2
+  810  ip r
+  811  i pr
+  812  ip r
+  813  ip a
+  814  nmcli device show
+  815  q
+  816  nmcli device status --active
+  817  nmcli connection show --active
+  818  ip r
+  819  traceroute 10.10.2.1
+  820  who
+  821  ssh new
+  822  sudo reboot
+  823  ssh new
+  824  history >l102.hist
